@@ -1,1 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Moirai+One&family=Orbitron:wght@400..900&family=Playwrite+AU+SA:wght@100..400&display=swap");
 @import "tailwindcss";
+
+@theme {
+    --font-Gemunu: "Gemunu Libre", sans-serif;
+    --font-Orbitron: "Orbitron", sans-serif;
+    --font-Moirai: "Moirai One", system-ui;
+}

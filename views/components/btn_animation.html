@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/public/css/style.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Moirai+One&family=Orbitron:wght@400..900&family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-[#EAE4D5] p-4 space-x-10 flex justify-end">
+    <button class="bg-red-700 hover:bg-fuchsia-500 text-2xl font-mono text-amber-200 hover:text-cyan-400 rotate-6 rounded-2xl border-2  transition duration-400 shadow-lg shadow-blue-400 cursor-pointer hover:origin-bottom">Hello Btn</button>
+    <button class="bg-amber-500 font-mono px-5 text-2xl rounded-3xl text-red-700 hover:text-blue-400 hover:bg-black -rotate-6  border-2  transition duration-700 shadow-lg shadow-black mr-5 cursor-pointer">BCG</button>
+    <button class="bg-[#F26B0F] font-mono  text-2xl rounded-3xl px-5 rotate-6 border-2  hover:text-white transition duration-500 hover:bg-gradient-to-l hover:from-[#F26B0F] hover:to-red-800  ease-in-out hover:origin-right cursor-pointer">KATIL</button>
+    
+    <button class="bg-[#A62C2C] font-mono text-2xl px-2 rounded-3xl -rotate-6 border-2  hover:text-white transition-all duration-700 hover:translate-x-2 overflow-hidden relative ease-in-out group">
+      <span class="absolute inset-0 bg-red-500 transform translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></span>
+      <span class="relative">ABONE OL</span>
+    </button>
+    
+    <button class="transform scale-x-100 hover:scale-x-125 focus:scale-x-75 transition-transform duration-300 ease-in-out bg-blue-500 text-white px-6 py-3 rounded-lg shadow-md hover:bg-blue-600 cursor-pointer">Tıkla!</button>
+    
+    <button class="bg-blue-500 text-white font-bold py-2 px-4 rounded overflow-hidden relative transition-all duration-700 ease-in-out group">
+      <span class="absolute inset-0 bg-red-500 transform translate-x-full group-hover:translate-x-0 transition-transform duration-700 ease-in-out"></span>
+      <span class="relative">Buton</span>
+    </button>
+    <!-- aşağıdan yukarıya kaydırma => transform translate-y-full group-hover:translate-y-0 ***** absolute inset-0 => sarı kırmızı katman butonu kaplar  **** relative => metin üstte kalır. konumlandırma -->
+    <button class="relative bg-blue-500 text-white py-2 px-4 rounded overflow-hidden hover:text-amber-500  transition-all duration-700 group">
+      <span class="absolute inset-0 bg-gradient-to-l from-[#F26B0F] to-red-800  transform translate-y-full group-hover:translate-y-0 duration-700 transition-transform"></span>
+      <span class="relative">Buton</span>
+    </button>
+  </div>
+  <p class="text-5xl font-bold text-center bg-amber-500 text-amber-50 font-Gemunu hover:font-Moirai">
+    Hello world!
+  </p>
+  <h1 class="font-Orbitron text-red-700 bg-black text-center text-3xl hover:text-6xl hover:text-amber-400 hover:bg-red-800">Burak</h1>
+  <p class="text-3xl text-[#309898] text-center bg-[#F4E7E1] font-mono hover:bg-blue-950 pb-1 transition duration-300">
+    Ne zaman relative kullanılır?  <br>
+    İçinde absolute öğeler varsa ve bunların ana elemente göre hizalanması gerekiyorsa. <br>
+
+    Bir öğenin diğer absolute veya katmanlı öğeler tarafından örtülmesini önlemek için. <br>
+
+    Alternatif: relative yerine z-10 gibi bir z-index sınıfı da kullanılabilir, ama relative daha yaygın ve güvenlidir. <br>
+  </p>
+  <div class="relative  font-mono">
+    <span class="absolute  bg-gray-700 top-2 left-2 text-white p-2 hover:text-4xl">absolute Ne İşe Yarar?<br>
+      Normal Akıştan Çıkarır: Element, sayfadaki diğer elementlerin düzenini etkilemez ve kendi konumunu bağımsız olarak belirler. <br>
+
+      Üst Kapsayıcıya Göre Konumlandırma: absolute elementi, en yakın relative, absolute veya fixed konumlandırılmış üst kapsayıcıya göre hizalanır. Eğer böyle bir kapsayıcı yoksa, sayfanın tamamına (body) göre konumlanır. <br>
+
+      Katmanlaşma (Z-Index): absolute elementler, diğer elementlerin üstüne çıkabilir, bu yüzden z-index ile katman sırası kontrol edilebilir. <br>
+
+      Esnek Yerleştirme: top, right, bottom, left gibi sınıflarla elementi tam istediğin yere yerleştirebilirsin. <br>
+
+    </span>
+  </div>
+</body>
+</html>
